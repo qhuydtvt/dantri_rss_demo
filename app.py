@@ -1,21 +1,16 @@
 from flask import Flask, render_template
-from mongoengine import connect
-from posts import Post
+import pymongo
 
 app = Flask(__name__)
 
 
-host = "ds011893.mlab.com"
-port = 11893
-db_name = "c4e_rss"
-user_name = "c4e"
-password = "codethechange"
+client = pymongo.MongoClient("mongodb://c4e:codethechange@ds011893.mlab.com:11893/c4e_rss")
+db = client.get_default_database()
 
-connect(db_name, host=host, port=port, username=user_name, password=password)
 
 @app.route('/')
 def hello_world():
-    posts = Post.objects
+    posts = db["posts"].find()
     print("Loading ok")
     return render_template("index.html", posts = posts)
 
