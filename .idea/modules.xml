@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../DanTriRSSDemo/.idea/DanTriRSSDemo.iml" filepath="$PROJECT_DIR$/../DanTriRSSDemo/.idea/DanTriRSSDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/dantri_rss_demo.iml" filepath="$PROJECT_DIR$/.idea/dantri_rss_demo.iml" />
     </modules>
   </component>
 </project>
