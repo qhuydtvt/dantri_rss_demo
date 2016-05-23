@@ -47,7 +47,9 @@ img {
 	position: relative;
 }
 /** END wrapper**/
-
+.post_content {
+	color:white;
+}
 /** BEGIN header **/
 #header {
 	height: 120px;
